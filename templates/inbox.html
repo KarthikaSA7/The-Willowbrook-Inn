@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="dashboard">
+  <aside class="dash-sidebar">
+    <div class="dash-logo">Smart Enquiry</div>
+    <nav class="dash-nav">
+      <a class="active">📥 Unified Inbox</a>
+      <a>⭐ Reviews</a>
+      <a>📊 Analytics</a>
+      <a>⚙️ Settings</a>
+    </nav>
+  </aside>
+
+  <section class="dash-list">
+    <h3>Inbox <span class="count">4 new</span></h3>
+    <div class="conv active">
+      <span class="channel-badge wa">WhatsApp</span>
+      <p class="conv-name">Guest &mdash; +44 7700 900123</p>
+      <p class="conv-preview">Yes please, is parking included?</p>
+      <span class="conv-time">18:43</span>
+    </div>
+    <div class="conv">
+      <span class="channel-badge web">Website Chat</span>
+      <p class="conv-name">Anonymous visitor</p>
+      <p class="conv-preview">Do you allow pets in the Loft Retreat?</p>
+      <span class="conv-time">17:20</span>
+    </div>
+    <div class="conv">
+      <span class="channel-badge sms">Missed Call</span>
+      <p class="conv-name">Unknown Guest</p>
+      <p class="conv-preview">Auto-SMS sent after missed call</p>
+      <span class="conv-time">21:08</span>
+    </div>
+    <div class="conv">
+      <span class="channel-badge ig">Instagram</span>
+      <p class="conv-name">@travel_with_amy</p>
+      <p class="conv-preview">Loved my stay! Left you a 5★ review ⭐</p>
+      <span class="conv-time">Yesterday</span>
+    </div>
+  </section>
+
+  <section class="dash-thread">
+    <div class="thread-header">
+      <span class="channel-badge wa">WhatsApp</span>
+      <strong>+44 7700 900123</strong>
+    </div>
+    <div class="thread-body">
+      <div class="wa-bubble in">Hi, do you have a double room free this Saturday?</div>
+      <div class="wa-bubble out">Yes &mdash; the Garden Room is available from &pound;145/night, breakfast included. Shall I hold it for you?</div>
+      <div class="wa-bubble in">Yes please, is parking included?</div>
+      <div class="wa-bubble out">Yes, free on-site parking is included. Booking link sent below.</div>
+    </div>
+  </section>
+</div>
+<p class="mockup-caption">One inbox for WhatsApp, website chat, missed calls and social &mdash; nothing falls through the cracks.</p>
+{% endblock %}

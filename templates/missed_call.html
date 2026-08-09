@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="mockup-page two-phones">
+  <div class="phone-frame small">
+    <div class="phone-notch"></div>
+    <div class="call-screen">
+      <p class="call-label">Missed call</p>
+      <div class="call-avatar">?</div>
+      <p class="call-name">Unknown Guest</p>
+      <p class="call-number">+44 7700 900123</p>
+      <p class="call-time">Today, 21:07</p>
+    </div>
+  </div>
+
+  <div class="arrow">&#10132;<span>auto-triggered in 60 seconds</span></div>
+
+  <div class="phone-frame small">
+    <div class="phone-notch"></div>
+    <div class="wa-header sms">
+      <span class="wa-back">&#8592;</span>
+      <div class="wa-title">
+        <div class="wa-name">{{ hotel_name }}</div>
+        <div class="wa-status">SMS</div>
+      </div>
+    </div>
+    <div class="wa-body">
+      <div class="wa-bubble out">
+        Sorry we missed your call! We're a small team so we can't always pick up &mdash; but we're here now. What can we help with? You can also book directly: willowbrookinn.co.uk/book
+        <span class="wa-time">21:08</span>
+      </div>
+    </div>
+  </div>
+</div>
+<p class="mockup-caption">Missed-call recovery &mdash; an unanswered call becomes an instant SMS instead of a lost enquiry.</p>
+{% endblock %}

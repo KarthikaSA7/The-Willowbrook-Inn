@@ -1,0 +1,160 @@
+{% extends "base.html" %}
+{% block content %}
+<nav class="site-nav">
+  <div class="logo">{{ hotel_name }}</div>
+  <div class="nav-links">
+    <a href="#rooms">Rooms</a>
+    <a href="#amenities">Amenities</a>
+    <a href="#contact">Contact</a>
+  </div>
+  <a href="#book" class="btn btn-nav">Book Now</a>
+</nav>
+
+<header class="hero" style="background-image: linear-gradient(180deg, rgba(30,24,16,.25), rgba(30,24,16,.55)), url('/static/img/hero.jpg');">
+  <div class="hero-text">
+    <p class="eyebrow">BOUTIQUE HOTEL &middot; EST. 2010</p>
+    <h1>{{ hotel_name }}</h1>
+    <p class="tagline">{{ tagline }}</p>
+    <a href="#book" class="btn btn-primary">Check Availability</a>
+  </div>
+</header>
+
+<section class="section" id="rooms">
+  <h2>Rooms &amp; Suites</h2>
+  <div class="card-grid">
+    <div class="card">
+      <div class="card-image" style="background-image: url('/static/img/room-garden.jpg');"></div>
+      <h3>Garden Room</h3>
+      <p>Queen bed, courtyard view, from &pound;145/night</p>
+    </div>
+    <div class="card">
+      <div class="card-image" style="background-image: url('/static/img/room-willow.jpg');"></div>
+      <h3>Willow Suite</h3>
+      <p>King bed, freestanding bath, from &pound;225/night</p>
+    </div>
+    <div class="card">
+      <div class="card-image" style="background-image: url('/static/img/room-loft.jpg');"></div>
+      <h3>Loft Retreat</h3>
+      <p>Exposed beams, private terrace, from &pound;280/night</p>
+    </div>
+    <div class="card">
+      <div class="card-image" style="background-image: url('/static/img/room-twin.jpg');"></div>
+      <h3>Twin Room</h3>
+      <p>Two single beds, ground floor, from &pound;135/night</p>
+    </div>
+    <div class="card">
+      <div class="card-image" style="background-image: url('/static/img/room-family.jpg');"></div>
+      <h3>Hayloft Family Suite</h3>
+      <p>Sleeps 4, separate lounge area, from &pound;310/night</p>
+    </div>
+    <div class="card">
+      <div class="card-image" style="background-image: url('/static/img/room-attic.jpg');"></div>
+      <h3>Rose Attic</h3>
+      <p>Cosy room under the eaves, from &pound;120/night</p>
+    </div>
+    <div class="card">
+      <div class="card-image" style="background-image: url('/static/img/room-honeymoon.jpg');"></div>
+      <h3>Honeymoon Suite</h3>
+      <p>Four-poster bed, roll-top bath, from &pound;295/night</p>
+    </div>
+    <div class="card">
+      <div class="card-image" style="background-image: url('/static/img/room-studio.jpg');"></div>
+      <h3>Courtyard Studio</h3>
+      <p>Self-catering kitchenette, from &pound;160/night</p>
+    </div>
+    <div class="card">
+      <div class="card-image" style="background-image: url('/static/img/room-stables.jpg');"></div>
+      <h3>The Stables</h3>
+      <p>Converted stable room, rustic charm, from &pound;175/night</p>
+    </div>
+    <div class="card">
+      <div class="card-image" style="background-image: url('/static/img/room-terrace.jpg');"></div>
+      <h3>Terrace View Room</h3>
+      <p>Private balcony, garden views, from &pound;240/night</p>
+    </div>
+    <div class="card">
+      <div class="card-image" style="background-image: url('/static/img/room-library.jpg');"></div>
+      <h3>Library Room</h3>
+      <p>Reading nook, queen bed, from &pound;155/night</p>
+    </div>
+    <div class="card">
+      <div class="card-image" style="background-image: url('/static/img/room-coachhouse.jpg');"></div>
+      <h3>Coach House Room</h3>
+      <p>Bright &amp; simple, ground floor, from &pound;130/night</p>
+    </div>
+  </div>
+</section>
+
+<section class="section alt" id="amenities">
+  <h2>Amenities</h2>
+  <p class="section-sub">Everything you need for a comfortable, effortless stay.</p>
+  <div class="amenities-grid">
+    <div class="amenity-item">
+      <div class="amenity-icon">🚗</div>
+      <h4>Free Parking</h4>
+      <p>On-site parking for all guests</p>
+    </div>
+    <div class="amenity-item">
+      <div class="amenity-icon">🍳</div>
+      <h4>Breakfast Included</h4>
+      <p>Served daily, 7:30&ndash;10:30am</p>
+    </div>
+    <div class="amenity-item">
+      <div class="amenity-icon">🐾</div>
+      <h4>Pet Friendly</h4>
+      <p>Selected rooms welcome pets</p>
+    </div>
+    <div class="amenity-item">
+      <div class="amenity-icon">🔄</div>
+      <h4>Free Cancellation</h4>
+      <p>Up to 48 hours before arrival</p>
+    </div>
+    <div class="amenity-item">
+      <div class="amenity-icon">📶</div>
+      <h4>Free Wi-Fi</h4>
+      <p>High-speed access throughout</p>
+    </div>
+    <div class="amenity-item">
+      <div class="amenity-icon">🛎️</div>
+      <h4>24/7 Reception</h4>
+      <p>We're here whenever you arrive</p>
+    </div>
+    <div class="amenity-item">
+      <div class="amenity-icon">🍷</div>
+      <h4>On-site Restaurant</h4>
+      <p>Locally sourced, seasonal menu</p>
+    </div>
+    <div class="amenity-item">
+      <div class="amenity-icon">🌿</div>
+      <h4>Garden &amp; Terrace</h4>
+      <p>Quiet outdoor spaces to relax</p>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer" id="contact">
+  <p>{{ hotel_name }} &middot; 12 Mill Lane, Cotswolds &middot; 01234 567890</p>
+  <p class="demo-note">This is a demo hotel website built to showcase Smart Enquiry Solutions in action.</p>
+</footer>
+
+<!-- Smart Enquiry Solutions AI Web Concierge widget -->
+<div id="chat-widget" class="chat-widget">
+  <div class="chat-header" id="chat-toggle">
+    <span>💬 Ask us anything</span>
+    <span id="chat-caret">▲</span>
+  </div>
+  <div class="chat-body" id="chat-body">
+    <div class="chat-messages" id="chat-messages">
+      <div class="msg bot">Hi! I'm the {{ hotel_name }} virtual concierge. Ask me about rooms, parking, breakfast, pets or cancellations 🙂</div>
+    </div>
+    <form id="chat-form" class="chat-input-row">
+      <input id="chat-input" type="text" placeholder="Type a question..." autocomplete="off">
+      <button type="submit">Send</button>
+    </form>
+  </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="/static/js/chat.js"></script>
+{% endblock %}
