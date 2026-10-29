@@ -7,7 +7,7 @@
     <a href="#amenities">Amenities</a>
     <a href="#contact">Contact</a>
   </div>
-  <a href="#book" class="btn btn-nav">Book Now</a>
+  <a href="#contact" class="btn btn-nav">Contact</a>
 </nav>
 
 <header class="hero" style="background-image: linear-gradient(180deg, rgba(30,24,16,.25), rgba(30,24,16,.55)), url('/static/img/hero.jpg');">
@@ -15,7 +15,7 @@
     <p class="eyebrow">BOUTIQUE HOTEL &middot; EST. 2010</p>
     <h1>{{ hotel_name }}</h1>
     <p class="tagline">{{ tagline }}</p>
-    <a href="#book" class="btn btn-primary">Check Availability</a>
+    <a href="#rooms" class="btn btn-primary">Explore Our Rooms</a>
   </div>
 </header>
 
@@ -137,24 +137,7 @@
   <p class="demo-note">This is a demo hotel website built to showcase Smart Enquiry Solutions in action.</p>
 </footer>
 
-<!-- Smart Enquiry Solutions AI Web Concierge widget -->
-<div id="chat-widget" class="chat-widget">
-  <div class="chat-header" id="chat-toggle">
-    <span>💬 Ask us anything</span>
-    <span id="chat-caret">▲</span>
-  </div>
-  <div class="chat-body" id="chat-body">
-    <div class="chat-messages" id="chat-messages">
-      <div class="msg bot">Hi! I'm the {{ hotel_name }} virtual concierge. Ask me about rooms, parking, breakfast, pets or cancellations 🙂</div>
-    </div>
-    <form id="chat-form" class="chat-input-row">
-      <input id="chat-input" type="text" placeholder="Type a question..." autocomplete="off">
-      <button type="submit">Send</button>
-    </form>
-  </div>
-</div>
 {% endblock %}
 
 {% block scripts %}
-<script src="/static/js/chat.js"></script>
 {% endblock %}

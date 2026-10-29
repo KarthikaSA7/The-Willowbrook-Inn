@@ -64,6 +64,27 @@ h1, h2, h3 { font-family: Georgia, "Times New Roman", serif; margin: 0 0 .4em; }
 @media (max-width: 900px) {
   .amenities-grid { grid-template-columns: repeat(2, 1fr); }
 }
+/* Book / GoHighLevel embeds */
+.book-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 32px; margin-top: 24px; }
+.book-col h3 { font-family: Georgia, serif; }
+.ghl-embed {
+  width: 100%; min-height: 620px; border: 1px solid var(--line);
+  border-radius: 10px; background: #fff;
+}
+.ghl-placeholder {
+  min-height: 620px; border: 2px dashed var(--line); border-radius: 10px;
+  background: #fff; display: flex; flex-direction: column; align-items: center;
+  justify-content: center; text-align: center; padding: 24px; color: #6b6255;
+}
+.ghl-placeholder p { margin: 6px 0; font-size: 1.05rem; }
+.ghl-placeholder .ghl-hint { font-size: .85rem; max-width: 300px; }
+.ghl-placeholder code {
+  background: #f2ece1; padding: 2px 6px; border-radius: 4px; font-size: .82rem;
+}
+@media (max-width: 900px) {
+  .book-grid { grid-template-columns: 1fr; }
+}
+
 .site-footer { padding: 32px 48px; text-align: center; background: var(--accent-dark); color: #f3ead9; }
 .demo-note { font-size: .8rem; opacity: .75; margin-top: 6px; }
 
